@@ -9,8 +9,10 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
   text-decoration: none;
+  color: black;
 }
 
+/* Accueil */
 header {
   display: flex;
   justify-content: center;
@@ -167,6 +169,7 @@ button {
 }
 
 .card-restaurant {
+  position: relative;
   width: 90%;
   height: 250px;
   margin-top: 20px;
@@ -196,11 +199,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 30px;
-  left: 65%;
-  bottom: 245px;
+  right: 10px;
+  top: 10px;
   border-radius: 3px;
   color: #527a70;
   background-color: #99e2d0;
@@ -218,9 +221,15 @@ button {
 }
 
 .fa-heart {
-  position: relative;
-  left: 90%;
+  position: absolute;
+  right: 20px;
   bottom: 30px;
+}
+
+.fa-heart:hover::before {
+  color: #9356dc;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 footer {
@@ -252,6 +261,7 @@ footer i {
   margin-right: 5px;
 }
 
+/* Responsive desktop et tablette */
 @media screen and (min-width: 846px) {
   header {
     display: flex;
@@ -316,10 +326,6 @@ footer i {
     font-weight: 300;
   }
 
-  .new {
-    left: 85%;
-  }
-
   .section-restaurants {
     padding-bottom: 50px;
     padding-top: 40px;
@@ -346,7 +352,7 @@ footer i {
     justify-content: flex-start;
     align-items: flex-start;
     height: 197px;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 40px;
     background-color: #353535;
   }
@@ -358,8 +364,12 @@ footer i {
 
   footer div {
     margin-bottom: 10px;
+  }
+
+  footer a {
     margin-right: 20px;
   }
 }
+/* Menu */
 
 /*# sourceMappingURL=style.css.map */
