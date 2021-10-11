@@ -17,6 +17,7 @@ $grey: #f6f6f6;
 /* Accueil */
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -201,12 +202,12 @@ button {
 .card-restaurant p {
   margin-left: 14px;
 }
-.fa-heart {
+.heart-accueil {
   position: absolute;
   right: 20px;
   bottom: 30px;
 }
-.fa-heart:hover::before {
+.heart-accueil:hover::before {
   color: $primaire;
   cursor: pointer;
   font-weight: bold;
@@ -236,7 +237,27 @@ footer i {
   color: white;
   margin-right: 5px;
 }
-/* Responsive desktop et tablette */
+/* Menu */
+.menu-header {
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-left {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10px;
+}
+.img-menu {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+/* Responsive desktop et tablette Accueil */
 
 @media screen and (min-width: 846px) {
   header {
@@ -333,4 +354,3 @@ footer i {
     margin-right: 20px;
   }
 }
-/* Menu */
