@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 $primaire: #9356dc;
 $secondaire: #ff79da;
@@ -251,10 +252,95 @@ footer i {
   position: absolute;
   left: 10px;
 }
+.section-menu {
+  background-color: $grey;
+}
 .img-menu {
+  position: relative;
   object-fit: cover;
   width: 100%;
-  height: 300px;
+  height: 320px;
+  z-index: -2;
+}
+
+.card-menu {
+  position: relative;
+  bottom: 40px;
+  background-color: $grey;
+  -webkit-border-radius: 40px 40px 0px 0px;
+  border-radius: 40px 40px 0px 0px;
+}
+.title-meal {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top: 40px;
+  font-weight: 400;
+}
+.decoration-line {
+  border-bottom: 2px solid $tertiaire;
+  width: 40px;
+  height: 25px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.title-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.title-menu i {
+  position: absolute;
+  right: 40px;
+}
+.title-menu h1 {
+  font-family: "Shrikhand", cursive;
+}
+.section-meal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-meal {
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 5px 15px 4px rgba(94, 94, 94, 0.49);
+  box-shadow: 0px 5px 15px 4px rgba(133, 133, 133, 0.49);
+}
+.card-meal h3 {
+  font-size: 15px;
+}
+.card-meal p {
+  font-size: 14px;
+}
+.price {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+.order {
+  margin-top: 47px;
+  margin-bottom: 80px;
+  border: none;
+  border-radius: 30px;
+  width: 180px;
+  font-weight: 400;
+  padding: 15px;
+  background-color: $primaire;
+  color: white;
+  background: #9356dc;
+  background: -moz-linear-gradient(top, #ff79da 0%, #9356dc 100%);
+  background: -webkit-linear-gradient(top, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  -webkit-box-shadow: 0px 5px 15px 4px rgba(94, 94, 94, 0.49);
+  box-shadow: 0px 5px 15px 4px rgba(94, 94, 94, 0.49);
+  cursor: pointer;
 }
 
 /* Responsive desktop et tablette Accueil */
