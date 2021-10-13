@@ -93,6 +93,7 @@ button {
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   -webkit-box-shadow: 0px 5px 15px 4px rgba(94, 94, 94, 0.49);
   box-shadow: 0px 5px 15px 4px rgba(94, 94, 94, 0.49);
+  cursor: pointer;
 }
 
 .section-function h2 {
@@ -347,8 +348,31 @@ footer i {
   margin-bottom: 15px;
   -webkit-box-shadow: 0px 5px 15px 4px rgba(94, 94, 94, 0.49);
   box-shadow: 0px 5px 15px 4px rgba(133, 133, 133, 0.49);
+  cursor: pointer;
 }
 
+.animation {
+  animation: apparition-menu 2s;
+}
+
+.delay {
+  animation-delay: 50ms;
+}
+
+.delay2 {
+  animation-delay: 100ms;
+}
+
+@keyframes apparition-menu {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .card-meal h3 {
   font-size: 15px;
 }
@@ -489,6 +513,37 @@ footer i {
 
   footer a {
     margin-right: 20px;
+  }
+}
+/* Responsive desktop et tablette Menu */
+@media screen and (min-width: 846px) {
+  .title-menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-meal {
+    width: 40%;
+  }
+
+  .decoration-line {
+    border-bottom: 2px solid #99e2d0;
+    width: 40px;
+    height: 25px;
+    margin-left: 30%;
+    margin-bottom: 10px;
+  }
+
+  .title-menu {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+    margin-left: 30%;
+  }
+
+  .title-menu i {
+    position: absolute;
+    right: 45%;
   }
 }
 
