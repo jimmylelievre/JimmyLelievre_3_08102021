@@ -15,19 +15,42 @@ $grey: #f6f6f6;
   text-decoration: none;
   color: black;
 }
-/*.loader {
+
+@keyframes load {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+#loader {
+  animation: 2s load infinite ease-in-out;
+}
+.loader {
   position: absolute;
   width: 100%;
   height: 2500px;
   display: flex;
   justify-content: center;
-  padding-top: 30%;
+  padding-top: 20%;
   z-index: 5;
-  background-color: #353535;
+  background-color: #ffffff;
+  animation: loader forwards 5s;
 }
 .loader > p {
   color: white;
-}*/
+}
+@keyframes loader {
+  0% {
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
 /* Accueil */
 
 header {
