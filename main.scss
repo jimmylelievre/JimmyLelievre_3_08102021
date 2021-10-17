@@ -16,6 +16,17 @@ $grey: #f6f6f6;
   color: black;
 }
 
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 25%;
+  z-index: 5;
+  background-color: #ffffff;
+  animation: loader forwards 5s;
+}
 @keyframes load {
   0% {
     opacity: 0%;
@@ -28,20 +39,7 @@ $grey: #f6f6f6;
 #loader {
   animation: 2s load infinite ease-in-out;
 }
-.loader {
-  position: absolute;
-  width: 100%;
-  height: 2500px;
-  display: flex;
-  justify-content: center;
-  padding-top: 20%;
-  z-index: 5;
-  background-color: #ffffff;
-  animation: loader forwards 5s;
-}
-.loader > p {
-  color: white;
-}
+
 @keyframes loader {
   0% {
   }
