@@ -23,10 +23,16 @@
   height: 100%;
   display: none;
   justify-content: center;
+  align-items: flex-start;
   padding-top: 25%;
   z-index: 5;
   background-color: #ffffff;
   animation: loader forwards 5s;
+}
+
+#loader {
+  animation: 2s load infinite ease-in-out;
+  width: 30%;
 }
 
 @keyframes load {
@@ -37,10 +43,6 @@
     opacity: 100%;
   }
 }
-#loader {
-  animation: 2s load infinite ease-in-out;
-}
-
 @keyframes loader {
   100% {
     visibility: hidden;
@@ -59,6 +61,10 @@ header img {
   margin-bottom: 15px;
 }
 
+.search {
+  position: relative;
+}
+
 input {
   width: 100%;
   text-align: center;
@@ -74,8 +80,26 @@ input {
 }
 
 input::placeholder {
-  color: #4a4a4a;
+  color: #4b4b4b;
   font-weight: 500;
+}
+
+.fa-map-marker-alt {
+  color: #4b4b4b;
+}
+
+.search-icon {
+  position: absolute;
+  top: 9px;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  padding-right: 120px;
+}
+
+.space-icon {
+  width: 135px;
 }
 
 .title {
@@ -386,6 +410,9 @@ footer i {
 .card-meal:hover > .description-meal {
   padding-right: 100px;
 }
+.card-meal:hover > h3 {
+  padding-right: 100px;
+}
 .card-meal:hover .rotate {
   transform: rotate(360deg);
 }
@@ -441,6 +468,9 @@ footer i {
 .card-meal h3 {
   font-size: 15px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 60px;
 }
 
 .description-meal {
@@ -449,7 +479,7 @@ footer i {
   white-space: nowrap;
   overflow: hidden;
   transition: ease-out 0.3s;
-  padding-right: 45px;
+  padding-right: 60px;
 }
 
 .price {
@@ -485,18 +515,28 @@ footer i {
   header {
     display: flex;
     justify-content: flex-start;
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   header img {
-    width: 10%;
+    width: 150px;
     margin-top: 25px;
     margin-bottom: 10px;
   }
 
+  .search-icon {
+    position: absolute;
+    top: 9px;
+    left: 50px;
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
   input {
     text-align: left;
-    padding-left: 20px;
+    padding-left: 70px;
   }
 
   .title {
